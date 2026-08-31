@@ -399,6 +399,7 @@ git clone https://github.com/cctv18/AnyKernel3 --depth=1
 
 echo ">>> 清理 AnyKernel3 Git 信息..."
 rm -rf ./AnyKernel3/.git
+sed -i 's/Build by cctv18/Build by Jiaxi/; s/Coolapk@cctv18/Jiaxi/' ./AnyKernel3/anykernel.sh
 
 echo ">>> 拷贝内核镜像到 AnyKernel3 目录..."
 cp "$OUT_DIR/Image" ./AnyKernel3/
